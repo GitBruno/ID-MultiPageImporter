@@ -26,12 +26,13 @@
 // Version 2.6: Fixed a bug that would display a misleading error message ("This value would cause one or more objects to leave the pasteboard.") - mostly in cases where the default font size for a new text box would cause a 20x20 document units box to overflow
 // Version 2.6.1: Added new document scale for easy page scaling and tag all placed frames
 
-// Get app version and save old interation setting.
-// Some installs have the interaction level set to not show any dialogs.
-// This is used to insure that the dialog is shown.
+// git: https://github.com/mike-edel/ID-MultiPageImporter.git
 
 #target indesign;
 
+// Get app version and save old interation setting.
+// Some installs have the interaction level set to not show any dialogs.
+// This is used to insure that the dialog is shown.
 var appVersion = parseInt(app.version);
 // Only works in CS3+
 if(appVersion >= 5)
